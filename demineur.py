@@ -1,5 +1,7 @@
+#coding: utf-8
+
 #Import des modules
-from tkinter import *
+from Tkinter import *
 import random as rd
 import time
 import pygame.mixer
@@ -34,26 +36,26 @@ class fenetre(Tk):
         self.matriceGraph.append((self.taille[0]+2)*["V"])
         
         #import des images et des fichiers audio
-        self.F_blank = PhotoImage(file='ressource\\image_png\\blank.png')
-        self.F_death=PhotoImage(file='ressource\\image_png\\bombdeath.png')
-        self.F_flag=PhotoImage(file='ressource\\image_png\\bombflagged.png')
-        self.F_question=PhotoImage(file='ressource\\image_png\\bombquestion.png')
-        self.F_reveal=PhotoImage(file='ressource\\image_png\\bombrevealed.png')
-        self.F_nbrbl=PhotoImage(file='ressource\\image_png\\nbrbl.png')
-        self.F_open1=PhotoImage(file='ressource\\image_png\\open1.png')
-        self.F_open2=PhotoImage(file='ressource\\image_png\\open2.png')
-        self.F_open3=PhotoImage(file='ressource\\image_png\\open3.png')
-        self.F_open4=PhotoImage(file='ressource\\image_png\\open4.png')
-        self.F_open5=PhotoImage(file='ressource\\image_png\\open5.png')
-        self.F_open6=PhotoImage(file='ressource\\image_png\\open6.png')
-        self.F_open7=PhotoImage(file='ressource\\image_png\\open7.png')
-        self.F_open8=PhotoImage(file='ressource\\image_png\\open8.png')
+        self.F_blank = PhotoImage(file='ressource//image_png//blank.png')
+        self.F_death=PhotoImage(file='ressource//image_png//bombdeath.png')
+        self.F_flag=PhotoImage(file='ressource//image_png//bombflagged.png')
+        self.F_question=PhotoImage(file='ressource//image_png//bombquestion.png')
+        self.F_reveal=PhotoImage(file='ressource//image_png//bombrevealed.png')
+        self.F_nbrbl=PhotoImage(file='ressource//image_png//nbrbl.png')
+        self.F_open1=PhotoImage(file='ressource//image_png//open1.png')
+        self.F_open2=PhotoImage(file='ressource//image_png//open2.png')
+        self.F_open3=PhotoImage(file='ressource//image_png//open3.png')
+        self.F_open4=PhotoImage(file='ressource//image_png//open4.png')
+        self.F_open5=PhotoImage(file='ressource//image_png//open5.png')
+        self.F_open6=PhotoImage(file='ressource//image_png//open6.png')
+        self.F_open7=PhotoImage(file='ressource//image_png//open7.png')
+        self.F_open8=PhotoImage(file='ressource//image_png//open8.png')
         self.detecteur = [self.F_open1, self.F_open2, self.F_open3, self.F_open4, self.F_open5, self.F_open6, self.F_open7, self.F_open8]
 
-        self.mine = pygame.mixer.Sound("ressource\\audio\\explosion.ogg")
-        self.dig = pygame.mixer.Sound("ressource\\audio\\creuser.ogg")
-        self.plant = pygame.mixer.Sound("ressource\\audio\\flag.ogg")
-        self.vict = pygame.mixer.Sound("ressource\\audio\\victoire.ogg")
+        self.mine = pygame.mixer.Sound("ressource//audio//explosion.ogg")
+        self.dig = pygame.mixer.Sound("ressource//audio//creuser.ogg")
+        self.plant = pygame.mixer.Sound("ressource//audio//flag.ogg")
+        self.vict = pygame.mixer.Sound("ressource//audio//victoire.ogg")
         
         #Création de l'interface utilisateur
         self.Fond=Canvas(self,width=16*taille[0],height=16*taille[1])
